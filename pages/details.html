@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../css/output.css" />
+  </head>
+  <body>
+    <div id="id"></div>
+    <section class="py-14">
+      <div
+        class="container mx-auto px-5 scale-0 transition-transform duration-700"
+        id="detailsWrapper"
+      >
+        <a class="btn btn-neutral mb-5" href="../index.html">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.85355 3.14645C7.04882 3.34171 7.04882 3.65829 6.85355 3.85355L3.70711 7H12.5C12.7761 7 13 7.22386 13 7.5C13 7.77614 12.7761 8 12.5 8H3.70711L6.85355 11.1464C7.04882 11.3417 7.04882 11.6583 6.85355 11.8536C6.65829 12.0488 6.34171 12.0488 6.14645 11.8536L2.14645 7.85355C1.95118 7.65829 1.95118 7.34171 2.14645 7.14645L6.14645 3.14645C6.34171 2.95118 6.65829 2.95118 6.85355 3.14645Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          Orqaga
+        </a>
+        <h1 class="text-4xl font-medium mb-3" id="detailsTitle"></h1>
+        <p class="mb-6" id="detailsDescription"></p>
+        <h2 class="font-medium text-3xl mb-4">Xususiyatlari</h2>
+        <p class="flex items-center gap-1 mb-1">
+          Pozitsiya:
+          <strong id="detailsTrim"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Avlod:
+          <strong id="detailsGeneration"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Yil:
+          <strong id="detailsYear"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Rang:
+          <span class="w-10 h-4 inline-block shadow" id="detailsColor"></span>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Rang nomi:
+          <strong id="detailsColorName"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Turkum:
+          <strong id="detailsCategory"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Eshiklar soni:
+          <strong id="detailsDoorCount"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          O'rindiqlar soni:
+          <strong id="detailsSeatCount"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Tezligi:
+          <strong id="detailsMaxSpeed"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Tezlanish:
+          <strong id="detailsAcceleration"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Hajm:
+          <strong id="detailsEngine"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Ot kuchi:
+          <strong id="detailsHorsePower"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-1">
+          Yoqilg'i turi:
+          <strong id="detailsFuelType"></strong>
+        </p>
+        <p class="flex items-center gap-1 mb-6">
+          Davlat:
+          <strong id="detailsCountry"></strong>
+        </p>
+        <h2 class="font-medium text-3xl mb-3">Harajatlar</h2>
+        <div class="tabs tabs-border">
+          <input
+            type="radio"
+            name="my_tabs_2"
+            class="tab"
+            aria-label="Shahar"
+            checked="checked"
+          />
+          <div
+            class="tab-content border-base-300 bg-base-100 p-10"
+            id="detailsCity"
+          >
+            Tab content 1
+          </div>
+
+          <input
+            type="radio"
+            name="my_tabs_2"
+            class="tab"
+            aria-label="Katta yo'l"
+          />
+          <div
+            class="tab-content border-base-300 bg-base-100 p-10"
+            id="detailsHighway"
+          >
+            Tab content 2
+          </div>
+
+          <input
+            type="radio"
+            name="my_tabs_2"
+            class="tab"
+            aria-label="Aralash"
+          />
+          <div
+            class="tab-content border-base-300 bg-base-100 p-10"
+            id="detailsCombined"
+          >
+            Tab content 3
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-center fixed inset-0 bg-accent"
+        id="detailsLoading"
+      >
+        <span class="loading loading-dots loading-xl"></span>
+      </div>
+    </section>
+    <script type="module" src="../js/details.js"></script>
+  </body>
+</html>
